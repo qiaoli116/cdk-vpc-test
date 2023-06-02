@@ -12,7 +12,6 @@ export class MyVpcConstruct extends Construct {
         this.Vpc = new ec2.Vpc(this, 'MyVpc', {
             ipAddresses: ec2.IpAddresses.cidr(props.cidr),
             maxAzs: 10,
-            // availabilityZones: ['us-east-1a', 'us-east-1b', 'us-east-1c', 'us-east-1d', 'us-east-1e', 'us-east-1f'],
         });
 
 
